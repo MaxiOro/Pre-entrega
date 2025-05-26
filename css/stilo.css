@@ -10,6 +10,10 @@
     font-family: Outfit,Verdana, Tahoma, sans-serif;
 }
 
+body{
+    background-color: rgb(5, 0, 27);
+}
+
 header {
     display: flex;
     background-color: rgb(5, 0, 27);
@@ -20,38 +24,59 @@ header {
 
 }
 
+header a{
+    text-decoration: none;
+    color: gold;
+}
+
 body{
     font-family: Outfit, Verdana, Tahoma, sans-serif;    
 }
 .nav-list {
     display: flex;
     list-style: none;
-    gap: 5%;
-    flex-wrap: wrap;
-    
+    gap: 3%;
     /*flex-direction: row;*/
 }
 
-.nav-list li{
-    padding: 15px 25px;
-    text-decoration: none;
-    
+
+.titulo-prod{
+    font-size: xx-large;
+    color: gold;
+    text-align: center;
+    margin: 3%;
+
+}
+
+.vivi{
+    font-size: xx-large;
+    color: rgb(5, 0, 27);
+    text-align: center;
+    background-color: gold;
+    padding: 2%;
     
 }
 
-.prod-contedenor{
+.prod-contenedor{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5%;
+    border: 5px solid gold;
+    width: 100%;
 }
 
-.items{
-    border: 1px solid blue;
-    text-align: center;
+.item{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    width: 18em;
+    border: 2px solid ;
+    text-align: center; 
 }
 
 .precio{
+    color: gold;
     font-size: x-large;
     text-align: left;
 
@@ -64,32 +89,56 @@ body{
 }
 
 .descripcion{
+    color: gold;
     font-size: small;
     text-align: left;
 }
 
 .boton1{
-    background-color: red;
-    color: yellow;
+    background-color: gold;
+    color: rgb(5, 0, 27);
     padding: 3px;
     border-radius: 10%;
 
 }
 
-
 .boton1:hover{
     cursor: pointer;
     background-color: yellow;
-    color: red;
+    color: rgb(5, 0, 27);
 }
 .formulario{
-    border: 2px solid gold;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px 40px;
+    
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 5px; 
+}
+
+.boton-form{
+    background-color: rgb(187, 187, 187);
+    padding: 8px 20px;
+    width: 20%;
+    margin: auto;
 }
 
 footer{
     background-color:rgba(255, 217, 0, 0.8) ;
     color: black;
     padding: 5%;
+    margin: 5px;
     text-align: center;
-    border: 2px solid gold;
+    border: 2px solid white;
+}
+
+.BotonWsp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
