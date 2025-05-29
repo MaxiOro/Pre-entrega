@@ -12,16 +12,16 @@
 
 body{
     background-color: rgb(5, 0, 27);
+    font-family: Outfit, Verdana, Tahoma, sans-serif;
 }
 
 header {
     display: flex;
+    flex-direction: row;
     background-color: rgb(5, 0, 27);
     color: gold;
     align-items: center;
-    justify-content: space-between ;
     
-
 }
 
 header a{
@@ -29,16 +29,31 @@ header a{
     color: gold;
 }
 
-body{
-    font-family: Outfit, Verdana, Tahoma, sans-serif;    
+.navigation{
+    /* width: 80%; */
+    display: flex;
+    justify-content: end;
 }
+
 .nav-list {
     display: flex;
     list-style: none;
-    gap: 3%;
-    /*flex-direction: row;*/
+    gap: 5%;
+    flex-direction: row;
 }
 
+.nav-list li{
+    padding: 8px 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: gold;
+}
+
+.nav-list li:hover a {
+    color: white;
+}
 
 .titulo-prod{
     font-size: xx-large;
@@ -50,6 +65,7 @@ body{
 
 .vivi{
     font-size: xx-large;
+    font-family: Bebas Neue,Verdana, Tahoma, sans-serif;
     color: rgb(5, 0, 27);
     text-align: center;
     background-color: gold;
@@ -58,27 +74,32 @@ body{
 }
 
 .prod-contenedor{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border: 5px solid gold;
-    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-.item{
-    display: flex ;
+.item {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 18em;
-    border: 2px solid ;
-    text-align: center; 
+    border: 2px solid;
+    text-align: center;
+    margin: 8px;
+    padding: 8px;
 }
 
 .precio{
     color: gold;
     font-size: x-large;
     text-align: left;
+    margin-top: 8px;
 
 }
 
@@ -86,19 +107,23 @@ body{
     font-size: medium;
     color: green;
     text-align: left;
+    margin-top: 8px;
 }
 
 .descripcion{
     color: gold;
     font-size: small;
     text-align: left;
+    margin-top: 8px;
 }
 
 .boton1{
     background-color: gold;
     color: rgb(5, 0, 27);
-    padding: 3px;
-    border-radius: 10%;
+    padding: 8px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
 
 }
 
@@ -110,15 +135,22 @@ body{
 .formulario{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
     padding: 20px 40px;
     
 }
 
 .form-group{
+    width: 40%;
     display: flex;
     flex-direction: column;
     padding: 5px; 
+}
+
+.form-group input{
+    padding: 8px;
 }
 
 .boton-form{
@@ -126,6 +158,31 @@ body{
     padding: 8px 20px;
     width: 20%;
     margin: auto;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-form:hover{
+    background-color: rgb(238, 238, 116);
+}
+
+footer{
+    background-color:rgba(255, 217, 0, 0.8) ;
+    color: black;
+    padding: 5%;
+    margin: 5px;
+    text-align: left;
+    border: 2px solid gold
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.tit-form{
+    font-size:x-large;
 }
 
 footer{
@@ -134,11 +191,35 @@ footer{
     padding: 5%;
     margin: 5px;
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid gold
 }
 
-.BotonWsp{
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.boton-wsp{
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none
+    
+}
+
+@media only screen and (max-width:600px) {
+
+header {
+    flex-direction: column;
+}
+
+.nav-img img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px
+    
+}
 }
