@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*'Bebas neue'*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/*'Outfit'*/
+
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    font-family: Outfit,Verdana, Tahoma, sans-serif;
+}
+
+body{
+    font-family: Outfit, Verdana, Tahoma, sans-serif;
+    background-image: url("../media/img/Fondo.png"); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(5, 0, 27);
+    color: gold;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    
+    
+}
+
+header a{
+    text-decoration: none;
+    color: gold;
+}
+
+.navigation{
+    /* width: 80%; */
+    display: flex;
+    justify-content: end;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+.nav-list li{
+    padding: 8px 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: gold;
+}
+
+.nav-list li:hover a {
+    color: white;
+}
+
+.main{
+    width: 100%;
+}
+.titulo-prod{
+    font-size: xx-large;
+    color: gold;
+    text-align: center;
+    margin: 3%;
+
+}
+
+.vivi{
+    font-size: xx-large;
+    font-family: Bebas Neue,Verdana, Tahoma, sans-serif;
+    color: rgb(5, 0, 27);
+    text-align: center;
+    background-color: gold;
+    padding: 2%;
+    
+}
+
+.prod-contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100em;
+    text-align: center;
+    margin: 8px;
+    padding: 8px;
+}
+
+.precio{
+    background-color: gold;
+    border-radius: 5%;
+    color: rgb(5, 0, 27) ;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 12px;
+    padding: 8px 20px;
+
+}
+
+.oferta{
+    font-size: 32px;
+    background-color: gold;
+    border-radius: 5%;
+    color: green;
+    text-align: left;
+    margin-top: 8px;
+    padding: 8px 20px;
+}
+
+.descripcion{
+    background-color: gold;
+    color: rgb(5, 0, 27);
+    font-size: medium;
+    text-align: left;
+    margin-top: 8px;
+    padding: 8px 20px;
+}
+
+.boton1{
+    background-color: gold;
+    color: rgb(5, 0, 27);
+    padding: 8px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.boton1:hover{
+    cursor: pointer;
+    background-color: yellow;
+    color: rgb(5, 0, 27);
+}
+
+.goldi-pv{
+    background-color: gold;
+    display: flex;
+    flex-direction: row;
+    padding: 4.5%;   
+}
+
+.placa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20x 20px;
+}
+.img-placa{
+    display: flex;
+    justify-content:space-around;
+    
+    
+    padding: 20px 20px;
+}
+
+
+
+
+.fondo-formulario{
+    background-color:rgb(5, 0, 27);
+    border: 5px solid gold;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px 40px;
+    
+}
+
+.form-group{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px; 
+}
+
+.form-group input{
+    padding: 8px;
+}
+
+.boton-form{
+    background-color: rgb(187, 187, 187);
+    padding: 8px 20px;
+    width: 20%;
+    margin: auto;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-form:hover{
+    background-color: rgb(238, 238, 116);
+}
+
+.tit-form{
+    font-size:x-large;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    background-color:gold;
+    color: black;
+    padding: 5%;
+        
+}
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px;
+}
+
+
+.boton-wsp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none
+    
+}
+
+
+@media only screen and (max-width:600px) {
+
+header {
+    flex-direction: column;
+}
+
+
+.nav-img img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    
+}
+
+.nav-list{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.prod-contenedor{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.item {
+    width: 100%;
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+
+.form-group{
+    width: 100%;
+}
+
+}
