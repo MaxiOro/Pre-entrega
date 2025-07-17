@@ -11,9 +11,22 @@ Elegi 4 imagenes que asegure un tamaño que entren todas en horizontal, la idea 
 donde se aprecien mas los productos, en forma de columna con una mejor "publicacion." aunque no es definitiva la idea de una pagina e commerce, capaz lo utilice como base para una pagina basado en algo en especifico. 
 
 Actualzaciones
-Le agregue un fondo con una imagen para que no sea todo tan monotono el body. Debido a esto, le he teni do que agregar un fondo amarillo al precio oferta y nombre del producto para que sea mas legrible para el usuario.
+Le agregue un fondo con una imagen para que no sea todo tan monotono el body. Debido a esto, añadi un fondo amarillo al precio oferta y nombre del producto para que sea mas legible para el usuario.
 
-Le agregue un producto nomas, con un formato de fondo claro para que se destaque, siguiendo los colores, le agregue una descripcion para que se note que es un pdorducto destacado de la marca.
+Subi la imagen de un nuevo producto, con un formato de fondo claro para que se destaque, siguiendo los colores, con su descripcion para que se note que es un pdorducto destacado de la marca.
+
+Cambie el diseño del footer, para que me quede el mapa con un slogan al lado
+
+y opte por poner las redes abajo sin señalizarlas para que no se contamine tanto la pagina con espacios y texto.
+
+Le agregue un archivo JS llamado formulario con las validaciones solicitadas para el proyecto.
+La cuales deben mostrar un mensaje de error si no se completan los campos de texto.
+
+Una vez completada la validacion del formulario, al tocar el boton enviar nos lleva a un archivo html con la confirmacion de que funciona. 
+
+La media query como un "programador" novato fue la parte que mas me costo, lo hice con ayuda de chat gpt en algunas partes porque no sabia que era lo que me impedia que no quede centrado, se me veia desplazado hacia la derecha, pero se pudo solucionar.
+
+
 
 
 

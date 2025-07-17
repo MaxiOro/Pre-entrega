@@ -15,7 +15,7 @@ body{
     background-image: url("../media/img/Fondo.png"); 
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
 }
 
 header {
@@ -36,7 +36,6 @@ header a{
 }
 
 .navigation{
-    /* width: 80%; */
     display: flex;
     justify-content: end;
 }
@@ -65,10 +64,15 @@ header a{
 }
 .titulo-prod{
     font-size: xx-large;
-    color: gold;
     text-align: center;
-    margin: 3%;
-
+    h2{
+        margin: 40px auto;
+        width: 20%;
+        color: gold;
+        background-color: black;
+        padding: 10px 0;
+        border-radius: 10px;
+    }
 }
 
 .vivi{
@@ -132,7 +136,7 @@ header a{
 }
 
 .boton1{
-    background-color: gold;
+    background-color: white;
     color: rgb(5, 0, 27);
     padding: 8px 20px;
     margin-top: 20px;
@@ -151,10 +155,12 @@ header a{
     background-color: gold;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 4.5%;   
 }
 
 .placa {
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,11 +168,14 @@ header a{
     padding: 20x 20px;
 }
 .img-placa{
+    width: 60%;
     display: flex;
-    justify-content:space-around;
-    
-    
-    padding: 20px 20px;
+    justify-content:center;
+    /* padding: 20px 20px; */
+    img{
+        width: 50%;
+        object-fit: cover;
+    }
 }
 
 
@@ -217,25 +226,52 @@ header a{
 
 .footer-container{
     display: flex;
-    flex-direction: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20%;
     background-color:gold;
     color: black;
-    padding: 5%;
         
 }
 
+.arriba{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    
+}
+
 .mapa{
+    width: 60%;
+    height: 600px;
+}
+.desc-mapa{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.slogan{
+    text-align: center;
+    justify-content: center;
+}
+
+.descripcion{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.abajo {
+    margin: 60px 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 }
 
-.svg {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+.abajo svg {
     margin: 10px;
 }
 
@@ -251,39 +287,203 @@ header a{
 }
 
 
-@media only screen and (max-width:600px) {
 
-header {
-    flex-direction: column;
-}
+@media screen and (max-width: 600px) {
 
-
-.nav-img img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
     
-}
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-.nav-list{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+    .nav-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+    }
 
-.prod-contenedor{
-    padding-left: 40px;
-    padding-right: 40px;
-}
+    .nav-img img {
+        width: 100px;
+    }
 
-.item {
-    width: 100%;
-    margin: 0 0 8px 0;
-    padding: 0;
-}
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 15px 0;
+        gap: 15px;
+    }
 
-.form-group{
-    width: 100%;
-}
+    
+    .vivi {
+        font-size: xx-large;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .titulo-prod {
+        font-size: x-large;
+        margin: 5% 0;
+        text-align: center;
+    }
+
+    .prod-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        gap: 15px;
+    }
+
+    .item {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .item img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .boton1 {
+        padding: 8px 16px;
+        margin-top: 10px;
+    }
+
+    
+    .goldi-pv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .placa h1,
+    .placa p {
+        margin: 10px auto;
+        max-width: 95%;
+    }
+
+    .img-placa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .img-placa img {
+        width: 90%;
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .fondo-formulario h2,
+    .fondo-formulario h3 {
+        text-align: center;
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .form-group {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .boton-form {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .arriba {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 300px;
+    }
+
+    .desc-mapa {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .slogan {
+        font-size: 1.2em;
+    }
+
+    .descripcion {
+        font-size: 1em;
+    }
+
+    .abajo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .abajo h2 {
+        font-size: large;
+    }
+
+    .abajo div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .boton-wsp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+        z-index: 1000;
+    }
 
 }
